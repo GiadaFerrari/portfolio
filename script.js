@@ -2,6 +2,7 @@ let label = document.querySelector('label');
 
 let gallery = document.querySelector('.slideshow');
 let clickCounter=0;
+let clickCounters=0;
 
 let toggle = document.querySelector(".toggle");
 let toggle2 = document.querySelector(".toggle2");
@@ -29,12 +30,12 @@ let opening2 = document.querySelector('.animateMe2')
 let openingName = document.querySelector('.openingName')
 
 
-
 function goToMenu() {
     window.location.href = 'menu.html'
 }
 
 function appearText() {
+
     toggle.addEventListener('mouseenter', appearTextyeah);
     toggle.addEventListener('mouseleave', appearTextnope);
     toggle.style.opacity = "1"
@@ -50,11 +51,16 @@ function appearText() {
 
     }
 
+
+
+
 }
 
 function disappearText() {
     toggle.style.opacity = "0"
      ew1.style.opacity = "1"
+
+    ew1.setAttribute('src', 'images/rw_01.png');
 
 }
 function appearText2() {
@@ -132,7 +138,7 @@ setInterval(changeMe, 2500);
 function changeMe() {
     clickCounter++;
 
-    gallery.setAttribute('src', 'images/slides_' + clickCounter + '.jpg');
+    gallery.setAttribute('src', 'images/slides_' + clickCounter + '.png');
 
     if (clickCounter > 6) {
         clickCounter = 1

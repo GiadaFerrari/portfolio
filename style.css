@@ -8,7 +8,7 @@
 @font-face {
     font-family: 'scriptinaregular';
     src: url('scriptin-webfont.woff2') format('woff2'),
-         url('scriptin-webfont.woff') format('woff');
+    url('scriptin-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -22,7 +22,9 @@ body {
     color: #707070;
 }
 
-.hideIt{display:none;}
+.hideIt {
+    display: none;
+}
 
 /*nav*/
 
@@ -49,15 +51,19 @@ nav {
 }
 
 .me {
-    font-size: 2rem;
+    font-size: 3rem;
     color: #707070;
-    margin-top: -3vh;
+    margin-top: -6vh;
     font-family: 'Scriptina';
     text-decoration: none;
     text-align: center;
     display: flex;
     justify-content: center;
 
+}
+
+nav a:hover {
+    text-decoration-line: underline;
 }
 
 /*burger menu*/
@@ -125,17 +131,19 @@ label:hover {
 }
 
 img.slideshow {
-    height: 34vh;
+    min-height: 52vh;
+    height: auto;
     width: 100vw;
     opacity: 0.5;
     display: flex;
+    clip-path: polygon(0 18%, 100% 0, 100% 82%, 0% 100%);
 
 }
 
 .homeslide {
     text-align: center;
-    transform: skewY(-10deg);
-    margin-top: 14vh;
+    clip-path: polygon(0 18%, 100% 0, 100% 82%, 0% 100%);
+    margin-top: 1vh;
     background-color: black;
     display: flex;
 
@@ -146,7 +154,8 @@ div.link {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -24vh;
+    margin-top: -26vh;
+
     position: relative;
     color: white;
     z-index: 1;
@@ -156,7 +165,7 @@ div.link {
 
 .titlehp {
     align-content: center;
-    margin-top: 40vh;
+    margin-top: 24vh;
     color: #707070;
 }
 
@@ -175,7 +184,8 @@ h2 {
 
 .skew {
     background-color: white;
-    transform: skewY(-10deg);
+    clip-path: polygon(0 18%, 100% 0, 100% 82%, 0% 100%);
+
     margin-bottom: 16vh;
 }
 
@@ -204,6 +214,23 @@ a.toggle {
     opacity: 0;
 
 }
+
+img.ew1 {
+    height: 40vh;
+}
+
+img.ew2 {
+    height: 40vh;
+}
+
+img.ew3 {
+    height: 40vh;
+}
+
+img.ew4 {
+    height: 40vh;
+}
+
 
 /*about*/
 
@@ -234,13 +261,17 @@ a.toggle {
 }
 
 p {
-   font-family: 'Poiret One', cursive;
+    font-family: 'Poiret One', cursive;
     text-align: center;
-    font-size:1.3em;
+    font-size: 1.3em;
     padding: 2vh;
 }
 
 /*portfolio*/
+
+img.fav {
+    height: 55vh;
+}
 
 .portfoliop {
     color: #707070;
@@ -249,7 +280,7 @@ p {
 
 .fav {
     opacity: .4;
-    margin-top:-30vh;
+    margin-top: -30vh;
     margin-bottom: 1vh;
 
 }
@@ -260,7 +291,7 @@ a.hide {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -29vh;
+    margin-top: -39vh;
     padding-bottom: 10vh;
     position: relative;
     color: white;
@@ -270,11 +301,16 @@ a.hide {
 }
 
 a.oneinone {
-    margin-top: -10vh;
+    margin-top: -29vh;
 }
 
-a.twoInOne {
-    padding-top: 3vh;
+a.twoInOnep {
+    padding-top: 10vh;
+    padding-top: vh;
+}
+
+a.tInOne {
+    padding-top: 5vh;
 }
 
 .skew {
@@ -282,7 +318,7 @@ a.twoInOne {
 }
 
 img.hansel {
-    margin-top: 27vh;
+    margin-top: 17vh;
 }
 
 .aids {
@@ -295,35 +331,85 @@ img.hansel {
 
 /*THEME 04*/
 
-a.hide.order1 {
-    margin-top: -12vh;
-    font-size: 1rem;
-    margin-bottom: 3vh;
+a.back {
+    font-size: 1.4rem;
+    justify-content: center;
+    text-align: center;
 }
 
-a.hide.order2 {
-    margin-top: vh;
-    font-size: 1rem;
-    margin-bottom: 2vh;
+
+.orderMe {
+    margin-top: -60vh;
 }
 
-a.hide.order3 {
-    margin-top: 3vh;
-    font-size: 1rem;
-    margin-bottom: 1vh;
+a.order1 {
+    font-size: 1.5rem;
+    align-content: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+    z-index: 1;
+    opacity: 1;
+    text-decoration: none;
+    padding-bottom: 1vh;
+
 }
 
-a.hide.order4 {
-    margin-top: 8vh;
-    font-size: 1rem;
-    margin-bottom: 1vh;
+a.order2 {
+    font-size: 1.5rem;
+    align-content: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+    z-index: 1;
+    opacity: 1;
+    text-decoration: none;
+    padding-bottom: 1vh;
+
+}
+
+a.order3 {
+    font-size: 1.5rem;
+    align-content: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+    z-index: 1;
+    opacity: 1;
+    padding-bottom: 1vh;
+
+    text-decoration: none;
+}
+
+a.order4 {
+    font-size: 1.5rem;
+    align-content: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+    z-index: 1;
+    opacity: 1;
+    text-decoration: none;
+    padding-bottom: 1vh;
 }
 
 /*animation openpage*/
 
 .animateMe {
     position: absolute;
-    top:-10vh;
+    top: -10vh;
     width: 100%;
     height: 200%;
     background-color: #c6ffeb;
@@ -331,15 +417,15 @@ a.hide.order4 {
     transform: skewY(-6deg);
 }
 
-svg.line{
-    width:54vh;
+svg.line {
+    width: 54vh;
     display: flex;
     align-content: center;
     margin: auto;
-    transform:skewY(-6deg);
-    position:absolute;
-    top:55vh;
-    left:8vw;
+    transform: skewY(-6deg);
+    position: absolute;
+    top: 55vh;
+    left: 8vw;
     stroke-dasharray: 800px;
     stroke-dashoffset: 800px;
     animation: writeMe 1s 1s ease;
@@ -348,29 +434,35 @@ svg.line{
 
 
 
-.openingName{font-size: 3rem;
+.openingName {
+    font-size: 3rem;
     display: flex;
     align-content: center;
     margin-top: 38vh;
     opacity: 0;
-    transform:skewY(-6deg);
+    transform: skewY(-6deg);
     justify-content: center;
     animation: writeNam 3s linear forwards;
-animation-iteration-count: 1;
+    animation-iteration-count: 1;
 
 }
 
-@keyframes writeNam{
+@keyframes writeNam {
 
-    35%{opacity:1;
-    transform:translateY(0vh);
-         transform:skewY(-6deg);
+    35% {
+        opacity: 1;
+        transform: translateY(0vh);
+        transform: skewY(-6deg);
     }
-    80%{transform:translateY(0vh);
-     transform:skewY(-6deg);
-    opacity:1}
-    100%{transform:translateY(-100vh);
-    opacity:1;}
+    80% {
+        transform: translateY(0vh);
+        transform: skewY(-6deg);
+        opacity: 1
+    }
+    100% {
+        transform: translateY(-100vh);
+        opacity: 1;
+    }
 
 }
 
@@ -383,36 +475,45 @@ animation-iteration-count: 1;
 }
 
 .animateMe {
-     position: absolute;
-    top:-10vh;
+    position: absolute;
+    top: -10vh;
     width: 100%;
     height: 120%;
     background-color: #c6ffeb;
     z-index: 99;
     transform: skewY(-6deg);
-    animation:disappear 5s 2s linear forwards;
+    animation: disappear 5s 2s linear forwards;
     animation-iteration-count: 1;
 }
+
 .animateMe2 {
-     position: absolute;
-    top:-10vh;
+    position: absolute;
+    top: -10vh;
     width: 100%;
     height: 200%;
     background-color: #c6ffeb;
     z-index: 98;
     transform: skewY(-6deg);
-    animation:disappear2 5s linear forwards;
+    animation: disappear2 5s linear forwards;
     animation-iteration-count: 1;
 }
 
 
 @keyframes disappear2 {
-    99% {transform:translateY(1000vh);}
-    100% {transform:scaleY(0);}
+    99% {
+        transform: translateY(1000vh);
+    }
+    100% {
+        transform: scaleY(0);
+    }
 }
+
 @keyframes disappear {
-    to {transform:translateY(-1000vh);}
+    to {
+        transform: translateY(-1000vh);
+    }
 }
+
 @media screen and (min-width:801px) {
     /*burgermenu*/
     label.mobiletoggle {
@@ -441,6 +542,8 @@ animation-iteration-count: 1;
         font-size: 3.5rem;
     }
 
+
+
     nav {
         align-content: center;
         display: flex;
@@ -449,14 +552,15 @@ animation-iteration-count: 1;
         margin-right: 10vw;
     }
     /*main page*/
+
     img.slideshow {
-        height: 500px;
+        height: 550px;
 
     }
 
     .homeslide {
         margin-top: 7vh;
-        transform: skewY(-6deg);
+        /*  transform: skewY(-6deg);*/
     }
 
     main {
@@ -469,31 +573,50 @@ animation-iteration-count: 1;
 
     .skew img {
         max-width: 50vw;
-        transform: skewY(0deg);
-        height: 50vh;
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+        max-height: 400px;
+        min-height: 300px;
     }
+
 
     .skew {
-        transform: skewY(0deg);
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
     }
+
+    img.ew1 {
+    max-height: 60vh;
+}
+
+img.ew2 {
+    max-height: 60vh;
+}
+
+img.ew3 {
+    max-height: 60vh;
+}
+
+img.ew4 {
+    max-height: 60vh;
+}
 
     div.link {
-        margin-top: -39vh;
+        margin-top: -34vh;
     }
     a.hide {
-    text-align: center;
-    font-size: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: -39vh;
-    padding-bottom: 20vh;
-    position: relative;
-    color: white;
-    z-index: 1;
-    opacity: 1;
+        text-align: center;
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: -39vh;
+        padding-bottom: 20vh;
+        position: relative;
+        color: white;
+        z-index: 1;
+        opacity: 1;
 
-}
+
+    }
     /*   .try1 {
         transform: skewY(-6deg);
     }
@@ -519,21 +642,31 @@ animation-iteration-count: 1;
     }
 
     .skewMe {
-    transform: skewY(-10deg);
-    background-color: white;
-    margin-top: 16vh;
+        transform: skewY(-10deg);
+        background-color: white;
+        margin-top: 16vh;
 
-}
+    }
 
     /*themes*/
-    img.fav.hansel {
-        margin: 0;
+
+    a.twoInOnep {
+    padding-top: 0vh;
+    padding-top: 0vh;
+}
+    a.tInOne {
+        padding-top: 0vh;
     }
+    img.fav.hansel {
+        margin-top: 3vh;
+    }
+
 
     img.fav.vf {
         padding-left: 10vw;
         padding-right: 10vw;
         max-width: 80vw;
+
     }
 
     .skew1 {
@@ -558,33 +691,63 @@ animation-iteration-count: 1;
         margin-top: 4vh;
     }
 
-/*animation*/
+    /*animation*/
+    svg.line {
+        width: 120vh;
+        display: flex;
+        align-content: center;
+        margin: auto;
+        transform: skewY(-6deg);
+        position: absolute;
+        top: 70vh;
+        left: 18vw;
+        stroke-dasharray: 800px;
+        stroke-dashoffset: 800px;
+        animation: writeMe 1s 1s ease;
 
-    svg.line{
-    width: 120vh;
-    display: flex;
-    align-content: center;
-    margin: auto;
-    transform:skewY(-6deg);
-    position:absolute;
-    top:70vh;
-    left:18vw;
-    stroke-dasharray: 800px;
-    stroke-dashoffset: 800px;
-    animation: writeMe 1s 1s ease;
+    }
+    .openingName {
+        font-size: 7rem;
+        display: flex;
+        align-content: center;
+        margin-top: 30vh;
+        opacity: 0;
+        transform: skewY(-6deg);
+        justify-content: center;
+        animation: writeNam 3s linear forwards;
+        animation-iteration-count: 1;
 
-}
-    .openingName{font-size: 7rem;
-    display: flex;
-    align-content: center;
-    margin-top: 30vh;
-    opacity: 0;
-    transform:skewY(-6deg);
-    justify-content: center;
-    animation: writeNam 3s linear forwards;
-animation-iteration-count: 1;
+    }
 
-}
+    .orderMe {
+        margin-top: -64vh
+    }
+    a.order1 {
+        font-size: 2rem;
+        padding: 2vh;
+    }
+    a.order2 {
+        font-size: 2rem;
+        padding: 2vh;
+    }
+    a.order3 {
+        font-size: 2rem;
+        padding: 2vh;
+    }
+    a.order4 {
+        font-size: 2rem;
+        padding: 2vh;
+    }
 
-
-}
+    a.order1:hover {
+        text-decoration-line: underline;
+    }
+    a.order2:hover {
+        text-decoration-line: underline;
+    }
+    a.order3:hover {
+        text-decoration-line: underline;
+    }
+    a.order4:hover {
+        text-decoration-line: underline;
+    }
