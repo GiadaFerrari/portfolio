@@ -28,13 +28,27 @@ ew4.addEventListener('mouseleave', disappearText4);
 let opening = document.querySelector('.animateMe')
 let opening2 = document.querySelector('.animateMe2')
 let openingName = document.querySelector('.openingName')
+let vwidth = (window.matchMedia("(min-width: 801px)"));
+console.log(vwidth);
+
+if(vwidth == false){
+    ew1.style.opacity = ".5"
+    toggle.style.opacity = "1"
+    ew2.style.opacity = ".5"
+    toggle2.style.opacity = "1"
+    ew3.style.opacity = ".5"
+    toggle3.style.opacity = "1"
+    ew4.style.opacity = ".5"
+    toggle4.style.opacity = "1"
+
+}
 
 
 function goToMenu() {
     window.location.href = 'menu.html'
 }
 
-function appearText() {
+ function appearText() {
 
     toggle.addEventListener('mouseenter', appearTextyeah);
     toggle.addEventListener('mouseleave', appearTextnope);
@@ -130,19 +144,5 @@ function appearText4() {
 function disappearText4() {
     toggle4.style.opacity = "0"
      ew4.style.opacity = "1"
-
-}
-
-setInterval(changeMe, 2500);
-
-function changeMe() {
-    clickCounter++;
-
-    gallery.setAttribute('src', 'images/slides_' + clickCounter + '.png');
-
-    if (clickCounter > 6) {
-        clickCounter = 1
-    };
-
 
 }
